@@ -70,11 +70,14 @@ button{
     border-radius: 25px;
 } */
 .About p{
-    width: auto;
+    width: 90%;
     padding-left: 6%;
     padding-right: 6%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    border:none;
+    box-shadow: black 28px;
+    
 }
 .sec3{
     display: flex;
@@ -194,6 +197,9 @@ textarea{
         padding-top: 5%;
         z-index: 67;
 
+    }
+    .Sec1{
+        height: 50vh;
     }
     li{
         padding-bottom: 20%;
