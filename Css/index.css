@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 6%;
+    height: 10vh;
+    padding-top: 2%;
+    width: 92%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 0,0.5);
+    position: fixed;
+}
+nav h3{
+    font-size: 30px;
+}
+ul{
+    list-style: none;
+    display: inline-flex;
+    gap: 7%;
+    padding-right: 5%;
+}
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 0,0.5);
+}
+a:hover{
+    color: aliceblue;
+
+}
+#bar{
+    display: none;
+}
+.Sec1{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/images/ban1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+.top{
+    color: aliceblue;
+    padding-left: 12%;
+    padding-top: 12%;
+}
+.top h1{
+    font-size: 50px;
+    /* word-spacing: 20px; */
+    letter-spacing: 5px;
+}
+button{
+    background: rgb(255, 255, 0,0.5);
+    padding: 1%;
+    border-radius: 25px;
+    font-style: bold;
+}
+.About{
+    text-align: center;
+    padding-top: 2%;
+}
+.About img{
+ width: 30%;
+}
+/* .About button{
+    background: rgba(255, 255, 0,0.5);
+    padding: 1%;
+    border-radius: 25px;
+} */
+.About p{
+    width: auto;
+    padding-left: 6%;
+    padding-right: 6%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.sec3{
+    display: flex;
+    padding: 6%;
+}
+.sec3 img{
+    height: 500px;
+    width: 500px;
+}
+.sec3 h4{
+    color:rgba(255, 255, 0,0.9); ;
+}
+.sec3 h2{
+    font-weight: none;
+    font-size: 30px;
+    word-spacing: 5%;
+}
+.sec3 p{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.sec4{
+    text-align: center;
+    /* padding: 5%; */
+}
+.team{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-rows: repeat(1, minmax());
+    gap: 1.5%;
+    padding: 5%;
+    overflow-x: scroll;
+}
+.team img{
+    height: 300px;
+    width: 300px;
+}
+.sec5{
+    padding-top: 5%;
+    text-align: center;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-rows: repeat(2, minmax());
+    gap: 1.2%;
+    padding-left: 7%;
+    padding-right: 7%;
+    /* overflow-x: scroll; */
+}
+.gallery img{
+    width: 350px;
+    height: 350px;
+}
+input{
+    width: 200%;
+    height: 30%;
+    cursor: pointer;
+}
+.contact{
+    height: 60vh;
+    /* text-align: center; */
+    align-content: center;
+    padding-top: 4%;
+    padding-left: 8%;
+    padding-right: 10%;
+}
+.flex{
+    display: flex;
+    gap: 20%;
+    /* padding-left: 13%; */
+}
+textarea{
+    width: 400%;
+    height: 125%;
+}
+.img img{
+    width: 500%;
+    height: 500%;
+}
+.img{
+    display: flex;
+    gap: 50%;
+}
+.footer{
+    display: flex;
+    color: beige;
+    padding-top: 5%;
+    padding-left: 8%;
+    padding-right: -70%;
+    gap: 10%;
+    background-color: rgba(0, 0, 0,0.7);
+}
+.img{
+    width: 10px;
+    height: 10px;
+}
+@media  screen and (max-width:600px) {
+    #bar{
+        display: block;
+        color: aliceblue;
+    }
+    nav h3{
+        font-size: 15px;
+        /* display: none; */
+    }
+    ul{
+        display: block;
+        height: 80vh;
+        background-color: rgba(0, 0, 0,1);
+        /* margin: 10%; */
+        margin-left: 1%;
+        width: 120%;
+        text-align: center;
+        top: 50%;
+        visibility: hidden;
+        padding-top: 5%;
+        z-index: 67;
+
+    }
+    li{
+        padding-bottom: 20%;
+    }
+    .open-nav{
+        visibility: visible;
+        display: block;
+        height: 70vh;
+        background-color: rgba(0, 0, 0,0.6);
+        /* margin: 10%; */
+        margin-left: 1%;
+        width: 100%;
+        text-align: center;
+        padding-top: 5%;
+        /* left: 120%; */
+    }
+}
+@media screen and (max-width:1081px) {
+          .gallery{
+              overflow-x: scroll;
+          }
+          input{
+              width: 150%;
+          }
+          textarea{
+              width: 180%;
+          }
+}
+
+@media screen and (max-width:700px) {
+    .sec3{
+        display: block;
+    }
+    .gallery{
+        overflow-x: scroll;
+    }
+    textarea{
+        width: 100%;
+    }
+    .footer{
+        display: block;
+        height: 25vh;
+    }
+    .top h1{
+        font-size: 25px;
+    }
+    .top{
+        padding-top: 27%;
+    }
+    .sec3 img{
+        width: 80%;
+        height: 50%;
+    }
+    input{
+        width: 100%;
+    }
+}
+
